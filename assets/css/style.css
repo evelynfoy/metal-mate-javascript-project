@@ -59,3 +59,22 @@ header {
 #motivational-area p{
     padding: .5rem;
 }
+
+.area {
+    background-color: var(--silver);
+    margin-top: 2rem;
+    width:90%;
+    margin: 1rem auto;
+    display: flex; 
+    flex-direction: column; 
+    color: var(--dark-grey);
+    border-radius: 1rem;
+}
+
+.area div, p{
+    padding: 1rem;
+}
+
+select {
+    max-width: 20rem;
+}
