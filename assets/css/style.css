@@ -43,3 +43,19 @@ header {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
+
+#main-area {
+    background-color: var(--white);
+    padding: 1rem;
+    padding-bottom: 6rem;;
+}
+
+#motivational-area {
+    padding: 1em; 
+    text-align: center; 
+    font-size: 2rem; 
+}
+
+#motivational-area p{
+    padding: .5rem;
+}
