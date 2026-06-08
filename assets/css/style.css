@@ -97,6 +97,10 @@ select {
     border-radius: 5rem;
 }
 
+.hide {
+    display: none;
+}
+
 /* For very small screens */
 @media screen and (max-width: 350px) {
 

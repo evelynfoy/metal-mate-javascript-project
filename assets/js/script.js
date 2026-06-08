@@ -7,6 +7,10 @@ const motivationalAreaRef = document.querySelector('#motivational-area');
 const metalChoiceRef = document.querySelector('#metal-choice');
 const currencyChoiceRef = document.querySelector('#currency-choice');
 const buttonRef = document.querySelector('#button');
+const priceAreaRef = document.querySelector('#price-area');
+const spotPriceRef = document.querySelector('#spot-price');
+const exchangeRateRef = document.querySelector('#exchange-rate');
+const updatedAtRef = document.querySelector('#updated-at');
 
 /**
  * Calls the appropriate function when the button is clicked based on its text value or
@@ -14,7 +18,12 @@ const buttonRef = document.querySelector('#button');
  */
 async function buttonClicked() {
   const prices = await fetchDataFromAPI("price");
-  console.log(prices);
+
+  spotPriceRef.innerHTML = prices.currencySymbol + prices.price;
+  exchangeRateRef.innerHTML = prices.exchangeRate;
+  updatedAtRef.innerHTML = new Date(prices.updatedAt).toUTCString();
+
+  priceAreaRef.classList.remove('hide');
 
 }
 
