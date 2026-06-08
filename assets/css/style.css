@@ -79,6 +79,24 @@ select {
     max-width: 20rem;
 }
 
+#button-area {
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    font-size: 2rem;
+    background-color: var(--gold);
+    color: var(--dark-grey);
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5rem;
+}
+
 /* For very small screens */
 @media screen and (max-width: 350px) {
 
@@ -147,3 +165,4 @@ select {
         justify-content: space-around;
        
     }
+}

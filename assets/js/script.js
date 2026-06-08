@@ -6,6 +6,18 @@
 const motivationalAreaRef = document.querySelector('#motivational-area');
 const metalChoiceRef = document.querySelector('#metal-choice');
 const currencyChoiceRef = document.querySelector('#currency-choice');
+const buttonRef = document.querySelector('#button');
+
+/**
+ * Calls the appropriate function when the button is clicked based on its text value or
+ * resets the game to start again
+ */
+async function buttonClicked() {
+  const prices = await fetchDataFromAPI("price");
+  console.log(prices);
+
+}
+
 /**
  * If mode is metals then it returns a list of valid symbols otherwise it returns the specific price requested.
  * For symbols it fetches the list using the https://api.gold-api.com/symbols url
@@ -20,7 +32,10 @@ async function fetchDataFromAPI(mode) {
   const metal = metalChoiceRef.value;
   const currency = currencyChoiceRef.value;
 
-  const url = `https://api.gold-api.com/symbols`;
+  const metalsUrl = `https://api.gold-api.com/symbols`;
+  const priceUrl = `https://api.gold-api.com/price/${metal}/${currency}`;
+  
+  const url = (mode === "metals") ? metalsUrl : priceUrl;
 
   try {
     const result = await fetch(url);
@@ -70,3 +85,6 @@ function loadCurrencies() {
 // Load metals options from API 
 loadMetals();
 loadCurrencies();
+
+// Set button click functions
+buttonRef.addEventListener('click', buttonClicked);
