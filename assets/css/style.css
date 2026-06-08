@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Global Variables */
+:root {
+    --gold:#D4AF37;
+    --silver:#C4C4C4;
+    --dark-grey:#24211E;
+    --white: #FFF;
+  
+}
+
 /* Set base font size for ease of calculation of rems */
 html { 
     font-size: 62.5%; 
@@ -9,4 +20,26 @@ html {
     margin: 0;
     padding: 0;
     border: none;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+main {
+    background-color: var(--gold);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    color: var(--dark-grey);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
