@@ -60,18 +60,18 @@ Please try again later.`);
 
 /**
  * Calls the async function that fetches the symbols using an API passing in a mode of 'metals'.
- * Creates an html option for each symbol and updates the html page with the list
+ * Creates an html option for each symbol and updates the html page with the list.
+ * Lists Gold first as default
  */
 async function loadMetals() {
 
   const metals = await fetchDataFromAPI("metals");
-  let html = `<select name="Gold" value="XAU" id="metal-choice" >`;
-
+  let html = `<option value="XAU">Gold</option>`;
   metals.forEach(
     metal => {
-      html += `<option value="${metal.symbol}">${metal.name}</option>`;
+      html += (metal.symbol !== "XAU") ? `<option value="${metal.symbol}">${metal.name}</option>` : ``;
     }
-  );
+  )
 
   metalChoiceRef.innerHTML = html;
 }
