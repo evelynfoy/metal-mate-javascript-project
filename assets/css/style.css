@@ -148,7 +148,6 @@ select {
 
     select {
         max-width: 27rem;
-        font-size: 2rem;
     }
 }
 
