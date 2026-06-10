@@ -17,6 +17,10 @@ const updatedAtRef = document.querySelector('#updated-at');
  * resets the game to start again
  */
 async function buttonClicked() {
+  loadPrice();
+}
+
+async function loadPrice() {
   const prices = await fetchDataFromAPI("price");
 
   spotPriceRef.innerHTML = prices.currencySymbol + prices.price;
@@ -24,7 +28,6 @@ async function buttonClicked() {
   updatedAtRef.innerHTML = new Date(prices.updatedAt).toUTCString();
 
   priceAreaRef.classList.remove('hide');
-
 }
 
 /**
@@ -91,9 +94,18 @@ function loadCurrencies() {
   currencyChoiceRef.innerHTML = html;
 }
 
-// Load metals options from API 
-loadMetals();
-loadCurrencies();
+async function loadData()
+{
+  loadCurrencies();
+  await loadMetals();
+  await loadPrice();
+}
+
+/**
+ * Loads the currencies and metals to the drop downs and then automatically displays the price details
+ * for the default settings.
+ */
+loadData()
 
 // Set button click functions
 buttonRef.addEventListener('click', buttonClicked);
