@@ -109,3 +109,5 @@ loadData()
 
 // Set button click functions
 buttonRef.addEventListener('click', buttonClicked);
+metalChoiceRef.addEventListener('change', loadPrice);
+currencyChoiceRef.addEventListener('change', loadPrice);
