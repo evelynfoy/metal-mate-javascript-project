@@ -84,7 +84,7 @@ async function loadMetals() {
 function loadCurrencies() {
 
   let currencies = ["EUR", "AUD", "BRL", "CAD", "CHF", "CNY", "DKK",  "GBP", "HKD", "INR","JPY", "KRW", "MXN", "NOK", "NZD", "SEK", "SGD", "USD", "ZAR"];
-  let html = `<select name="USD" value="USD" id="currency-choice" >`;
+  let html = ``;
   currencies.forEach(
     currency => {
       html += `<option value="${currency}">${currency}</option>`;
