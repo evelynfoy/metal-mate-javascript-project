@@ -27,7 +27,6 @@ async function loadPrice() {
   exchangeRateRef.innerHTML = prices.exchangeRate;
   updatedAtRef.innerHTML = new Date(prices.updatedAt).toUTCString();
 
-  priceAreaRef.classList.remove('hide');
 }
 
 /**
