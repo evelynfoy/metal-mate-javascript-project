@@ -23,7 +23,7 @@ async function buttonClicked() {
 async function loadPrice() {
   const prices = await fetchDataFromAPI("price");
 
-  spotPriceRef.innerHTML = prices.currencySymbol + prices.price;
+  spotPriceRef.innerHTML = prices.currencySymbol + (Math.round(prices.price * 100) / 100).toFixed(2);
   exchangeRateRef.innerHTML = prices.exchangeRate;
   updatedAtRef.innerHTML = new Date(prices.updatedAt).toUTCString();
 
