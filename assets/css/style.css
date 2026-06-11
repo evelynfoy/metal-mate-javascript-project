@@ -132,6 +132,15 @@ select {
     #motivational-area {
         padding: 0;
     }
+
+    #price-area {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    #button {
+        margin-bottom: 1rem;
+    }
 }
 
 /* For medium screens */
