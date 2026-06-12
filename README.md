@@ -24,9 +24,12 @@ The currencies for the drop down are loaded from an array on first visiting the 
 The metals for the drop down are loaded from the symbols end-point of the gold-api.com API also on first visiting the site.
 Gold is loaded first so that it is the default value selected on entry. 
 
-The Price information is then retrieved on entry for the defaults once retrieved from the API. 
+The price information is then retrieved on entry for the defaults once retrieved from the API. 
 
-It has a button control to update price details
+There are event listeners added to both drop downs so that if either the currency or metal selection is changed the 
+price details will automatically be retrieved and displayed.
+
+It also has a button control to re-retrieve the same selection price details.
 
 
 ## Existing Features
@@ -39,13 +42,13 @@ It has a button control to update price details
 
   - __The Motivational Area__
 
-  - This section will display a message to explain to users the point of the site and explain how they can interact with the site.
+    - This section will display a message to explain to users the point of the site and explain how they can interact with it.
 
 ![Motivational Area](docs/images/MotivationalArea.png)
 
 - __The Preferences Area__
 
-  - This section allows the user to select the metal/symbol of preferance and the currency. 
+  - This section allows the user to select the metal/symbol of preference and the currency. 
   - The options stack on top of each other on small screens like phones.
 
 ![Preferences](docs/images/Preferences.png)
@@ -53,12 +56,17 @@ It has a button control to update price details
 
 ![Preferences](docs/images/Preferences-Phone.png)
 
+![Preferences](docs/images/MetalList.png)
+![Preferences](docs/images/CurrencyList.png)
+
+
+
 
 - __The Price Area__
 
   - This section will display the information returned from the API. 
   
-  This includes the current spot price for the chosen metal, the current exhange rate to the dollar and the date it was last updated in GMT time.
+  - This includes the current spot price for the chosen metal, the current exhange rate to the dollar and the date it was last updated in GMT time.
 
   ![Price Area](docs/images/PriceArea.png)
 
@@ -86,3 +94,31 @@ It has a button control to update price details
 
 ## Tools
 * [gold-api.com](https://gold-api.com/ "GOLD PRICE API")
+
+
+
+# Testing 
+
+To test this site I did the following:-
+First I tested the site on a mobile device and then on a tablet and laptop.
+1) Clicked the site url in github - https://evelynfoy.github.io/metal-mate-javascript-project/
+   The site appeared quickly and looked well.
+   The metal dropdown defaulted correctly to gold and displayed other options from the API on clicking.
+   The currency dropdown defaulted correctly to EUR and displayed other options from the array on clicking.
+   The preferences were stacked one over the other correctly and the styling adjusted correctly to facilitate a smaller screen.
+2) The price information appeared immediately on load of the site and was correct for the default preferences.
+3) I changed the metal preference to 'Silver' and the price information updated immediately to the correct value for 'Silver'.
+4) I changed the currency preference to 'JPY' and the price information updated immediately to the correct value for 'Silvr' in Japanese Yen.
+5) The correct symbol for yen appeared before the Spot Price.
+6) The Spot Price displayed correctly formated to 2 decimal places.
+7) After 5 mins I clicked the Update Prices button and the display updated with the latest price and 'Updated At' value.
+
+I continue to test choosing different currencies and metals and found the site pleasing and easy to use.
+
+I am satisfied with the results
+
+I then tested the error processing by changing the name of the url for the APIs to be incorrect.
+It displayed an alert informing me that the prices site was currently unavailable and that I should try again later.
+The button was disabled correctly preventing confusion.
+
+![Error](docs/images/Error.png)
