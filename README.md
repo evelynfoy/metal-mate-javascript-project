@@ -29,7 +29,8 @@ The price information is then retrieved on entry for the defaults once retrieved
 There are event listeners added to both drop downs so that if either the currency or metal selection is changed the 
 price details will automatically be retrieved and displayed.
 
-It also has a button control to re-retrieve the same selection price details.
+It also has a button control to re-retrieve the same selection price details. 
+The text on the button changes briefly during update. A timer is necessary to ensure the change is long enough for the user to see it.
 
 
 ## Existing Features
@@ -77,8 +78,11 @@ It also has a button control to re-retrieve the same selection price details.
 - __The Button section__
 
   - The button in this section allows users to refresh the price details of the current preferences.
+  - The text on the button is changed to 'Updating...' to indicate that the update is ocurring and there is a delay of 1 second before 
+    it is changed back so the user is aware of the update even if the displayed data has not changed.  
 
-![Button Area Start](docs/images/ButtonArea.png) 
+![Button Area ](docs/images/ButtonArea.png) 
+![Button Area Updating](docs/images/ButtonUpdating.png) 
 
 
 # Technologies used
