@@ -156,4 +156,11 @@ For local deployment
   - Go to https://github.com/evelynfoy/metal-mate-javascript-project
   - Click <b>Code</b> button
   - You can then choose to <b>Open with GitHub Desktop</b>, <b>Open with Visual Stuio</b> or <b>Download the source</b> as a zip file.
-  - If you download the zip file, you can extract the contents to a folder of your choice and open the source using any editor e.g Visual Studio Code 
+  - If you download the zip file, you can extract the contents to a folder of your choice and open the source using any editor e.g Visual Studio Code
+
+  # Credits 
+
+For code inspiration, help and advice,
+* [Gold Price API](https://gold-api.com/ "Gold Price API") For information on the API on which the functionality of this site is based.
+* [Stack Overflow](https://stackoverflow.com/questions/6134039/format-number-to-always-show-2-decimal-places) For various coding assistance.
+* [WebAIM](https://webaim.org/resources/contrastchecker/) Helped me choose good colour combinations for accessability.
