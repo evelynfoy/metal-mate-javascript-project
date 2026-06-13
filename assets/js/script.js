@@ -3,11 +3,9 @@
 /*jshint esversion: 8 */
 
 // Define references to html document elements
-const motivationalAreaRef = document.querySelector('#motivational-area');
 const metalChoiceRef = document.querySelector('#metal-choice');
 const currencyChoiceRef = document.querySelector('#currency-choice');
 const buttonRef = document.querySelector('#button');
-const priceAreaRef = document.querySelector('#price-area');
 const spotPriceRef = document.querySelector('#spot-price');
 const exchangeRateRef = document.querySelector('#exchange-rate');
 const updatedAtRef = document.querySelector('#updated-at');
@@ -73,7 +71,7 @@ async function loadMetals() {
     metal => {
       html += (metal.symbol !== "XAU") ? `<option value="${metal.symbol}">${metal.name}</option>` : ``;
     }
-  )
+  );
 
   metalChoiceRef.innerHTML = html;
 }
@@ -104,7 +102,7 @@ async function loadData()
  * Loads the currencies and metals to the drop downs and then automatically displays the price details
  * for the default settings.
  */
-loadData()
+loadData();
 
 // Set button click functions
 buttonRef.addEventListener('click', buttonClicked);
