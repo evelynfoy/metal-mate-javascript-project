@@ -122,3 +122,19 @@ It displayed an alert informing me that the prices site was currently unavailabl
 The button was disabled correctly preventing confusion.
 
 ![Error](docs/images/Error.png)
+
+
+### Validator Testing 
+
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fevelynfoy.github.io%2Fmetal-mate-javascript-project%2FF)
+    - See [Results](docs/images/htmlValidatorResult.png)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fevelynfoy.github.io%2Fmetal-mate-javascript-project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - See [Results](docs/images/cssValidatorResult.png)
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+    - See [Results](docs/images/jsHintResults.png)
+- Lighthouse Report
+    - Accessibility score 100
+    - See [Results](docs/images/LightHouseResults.png)
