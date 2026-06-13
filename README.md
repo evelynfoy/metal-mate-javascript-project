@@ -138,3 +138,22 @@ The button was disabled correctly preventing confusion.
 - Lighthouse Report
     - Accessibility score 100
     - See [Results](docs/images/LightHouseResults.png)
+
+# Deployment
+
+I created a repository in github for this project https://github.com/evelynfoy/metal-mate-javascript-project
+I then used the Visual Studio Code editor to build it.
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the <b>Settings</b> tab 
+  - Then click the <b>Pages</b> tab.
+  - From the source section drop-down menu, select the <b>Main</b> Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a link to the deployed site. 
+
+The live link can be found here - https://evelynfoy.github.io/metal-mate-javascript-project/
+
+For local deployment 
+  - Go to https://github.com/evelynfoy/metal-mate-javascript-project
+  - Click <b>Code</b> button
+  - You can then choose to <b>Open with GitHub Desktop</b>, <b>Open with Visual Stuio</b> or <b>Download the source</b> as a zip file.
+  - If you download the zip file, you can extract the contents to a folder of your choice and open the source using any editor e.g Visual Studio Code 
