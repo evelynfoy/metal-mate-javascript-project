@@ -112,10 +112,11 @@ First I tested the site on a mobile device and then on a tablet and laptop.
    The preferences were stacked one over the other correctly and the styling adjusted correctly to facilitate a smaller screen.
 2) The price information appeared immediately on load of the site and was correct for the default preferences.
 3) I changed the metal preference to 'Silver' and the price information updated immediately to the correct value for 'Silver'.
-4) I changed the currency preference to 'JPY' and the price information updated immediately to the correct value for 'Silvr' in Japanese Yen.
-5) The correct symbol for yen appeared before the Spot Price.
-6) The Spot Price displayed correctly formated to 2 decimal places.
-7) After 5 mins I clicked the Update Prices button and the display updated with the latest price and 'Updated At' value.
+4) I changed the currency preference to 'JPY' and the price information updated immediately to the correct value for 'Silver' in Japanese Yen.
+5) The correct symbol for yen appeared before the spot price.
+6) The spot price displayed correctly formated to 2 decimal places.
+7) After 5 mins I clicked the 'Update Price' button and the display updated with the latest price and 'Updated At' value.
+8) The text on the button changed to 'Updating...' for 1 second before displaying the original text when I clicked it.
 
 I continue to test choosing different currencies and metals and found the site pleasing and easy to use.
 
