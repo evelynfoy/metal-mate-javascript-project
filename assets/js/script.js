@@ -15,7 +15,8 @@ const updatedAtRef = document.querySelector('#updated-at');
  * resets the game to start again
  */
 async function buttonClicked() {
-  loadPrice();
+  buttonRef.innerHTML = "Updating...";
+  setTimeout(loadPrice, 1000);
 }
 
 async function loadPrice() {
@@ -25,6 +26,7 @@ async function loadPrice() {
   exchangeRateRef.innerHTML = prices.exchangeRate;
   updatedAtRef.innerHTML = new Date(prices.updatedAt).toUTCString();
 
+  buttonRef.innerHTML = "Update Price";
 }
 
 /**
