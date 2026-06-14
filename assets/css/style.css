@@ -147,6 +147,16 @@ select {
     }
 }
 
+/* For small screens */
+@media screen and (max-width: 425px) {
+    
+    #price-area {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
 /* For medium screens */
 
 @media screen and (min-width: 768px) {
